@@ -9,6 +9,8 @@ from utils.read_adult_data import read_data as read_adult
 from utils.read_adult_data import read_tree as read_adult_tree
 from utils.read_informs_data import read_data as read_informs
 from utils.read_informs_data import read_tree as read_informs_tree
+from utils.read_bank_data import read_data as read_bank
+from utils.read_bank_data import read_tree as read_bank_tree
 import sys, copy, random
 
 DATA_SELECT = 'a'
@@ -138,14 +140,21 @@ if __name__ == '__main__':
     if DATA_SELECT == 'i':
         RAW_DATA = read_informs()
         ATT_TREES = read_informs_tree()
-    else:
+    elif DATA_SELECT == 'a':
         RAW_DATA = read_adult()
         ATT_TREES = read_adult_tree()
+    elif DATA_SELECT == 'd':
+        RAW_DATA = read_bank()
+        ATT_TREES = read_bank_tree()
+    else:
+        raise Exception("Unknown DATA")
     print '#' * 30
     if DATA_SELECT == 'a':
         print "Adult data"
-    else:
+    elif DATA_SELECT == 'i':
         print "INFORMS data"
+    elif DATA_SELECT == 'd':
+        print "BANK data"
     print '#' * 30
     if FLAG == 'k':
         get_result_k(ATT_TREES, RAW_DATA)

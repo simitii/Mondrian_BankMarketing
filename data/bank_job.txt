@@ -1,0 +1,12 @@
+"admin.";"high-grade";*
+"entrepreneur";"high-grade";*
+"management";"high-grade";*
+"self-employed";"high-grade";*
+"blue-collar";"low-grade";*
+"housemaid";"low-grade";*
+"services";"low-grade";*
+"technician";"low-grade";*
+"retired";"other";*
+"student";"other";*
+"unemployed";"other";*
+"unknown";"other";*

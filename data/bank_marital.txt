@@ -1,0 +1,4 @@
+"single";"alone";*
+"divorced";"alone";*
+"married";*
+"unknown";*

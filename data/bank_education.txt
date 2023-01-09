@@ -1,0 +1,8 @@
+"illiterate";*
+"basic.4y";"basic";*
+"basic.6y";"basic";*
+"basic.9y";"basic";*
+"high.school";*
+"professional.course";"high";*
+"university.degree";"high";*
+"unknown";*
